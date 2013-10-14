@@ -1,14 +1,19 @@
-﻿using MaTresorerie.Money;
+﻿using MaTresorerie.Argent;
 using System;
 
 namespace MaTresorerie.Objet
 {
     public class Objet
     {
-        private Money.Money prix;
+        private Argent.Money prix;
         private String nom;
 
-        public Objet(Money.Money prix, String nom)
+        public Argent.Money getPrix()
+        {
+            return this.prix;
+        }
+
+        public Objet(Argent.Money prix, String nom)
         {
             this.prix = prix;
             this.nom = nom;

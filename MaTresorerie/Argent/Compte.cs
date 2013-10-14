@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MaTresorerie.Money
+namespace MaTresorerie.Argent
 {
     class Compte
     {
@@ -21,6 +21,11 @@ namespace MaTresorerie.Money
         public bool isDebiteur()
         {
             return solde.argent < 0;
+        }
+
+        public void acheter(Achats.Achat achats)
+        {
+            solde = solde - achats.prixTotal();
         }
 
         public override String ToString()
