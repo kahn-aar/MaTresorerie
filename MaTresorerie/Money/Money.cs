@@ -5,13 +5,20 @@ using System.Text;
 
 namespace MaTresorerie.Money
 {
-    struct Money
+    public class Money
     {
-        private int argent {get ; set;}
+        public long argent { get ; set;}
         private String devise { get; set; }
         private String deviseRaccourcis { get; set; }
 
-        String toString()
+        public Money(int prix, String devise, String raccourcis)
+        {
+            this.argent = prix;
+            this.devise = devise;
+            this.deviseRaccourcis = raccourcis;
+        }
+
+        public override String ToString()
         {
             return argent.ToString() + " " + deviseRaccourcis;
         }

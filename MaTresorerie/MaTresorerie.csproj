@@ -37,7 +37,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Money\Compte.cs" />
     <Compile Include="Money\Money.cs" />
+    <Compile Include="Money\MoneyConstantes.cs" />
     <Compile Include="Objet\Objet.cs" />
     <Compile Include="Tresorerie.cs" />
   </ItemGroup>
