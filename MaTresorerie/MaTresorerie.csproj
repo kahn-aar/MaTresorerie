@@ -44,6 +44,7 @@
     <Compile Include="Argent\MoneyException.cs" />
     <Compile Include="Objet\Objet.cs" />
     <Compile Include="Tresorerie.cs" />
+    <Compile Include="utilisateurs\Utilisateur.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utils\" />
