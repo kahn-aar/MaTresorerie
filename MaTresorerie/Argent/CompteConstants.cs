@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace MaTresorerie.Argent
+{
+    class CompteConstants
+    {
+        public const Compte LIVRET_A = new Compte("Livret A", new Money(0, MoneyConstantes.EUROS), 1.25);
+    }
+}

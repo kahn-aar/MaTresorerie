@@ -39,6 +39,8 @@
   <ItemGroup>
     <Compile Include="Achats\Achat.cs" />
     <Compile Include="Argent\Compte.cs" />
+    <Compile Include="Argent\CompteConstants.cs" />
+    <Compile Include="Argent\Devise.cs" />
     <Compile Include="Argent\Money.cs" />
     <Compile Include="Argent\MoneyConstantes.cs" />
     <Compile Include="Argent\MoneyException.cs" />

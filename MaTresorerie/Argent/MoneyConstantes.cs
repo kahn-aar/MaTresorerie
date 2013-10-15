@@ -7,7 +7,7 @@ namespace MaTresorerie.Argent
 {
     class MoneyConstantes
     {
-        public static String EUROS = "EUR";
-        public static String DOLLAR = "USD";
+        public const Devise EUROS = new Devise("euros", "EUR");
+        public const Devise DOLLAR = new Devise("dollars", "USD");
     }
 }

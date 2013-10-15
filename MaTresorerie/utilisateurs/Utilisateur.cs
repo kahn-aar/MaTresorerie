@@ -21,7 +21,7 @@ namespace MaTresorerie.utilisateurs
 
         public void ajouterUnCompte(String titre, double taux)
         {
-            Argent.Compte newCompte = new Argent.Compte(titre, new Argent.Money(0, "euros", Argent.MoneyConstantes.EUROS), taux);
+            Argent.Compte newCompte = new Argent.Compte(titre, new Argent.Money(0,  Argent.MoneyConstantes.EUROS), taux);
             listeDeComptes.Add(newCompte);
         }
     }

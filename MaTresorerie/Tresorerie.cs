@@ -12,10 +12,10 @@ namespace MaTresorerie
     {
         public static void Main()
         {
-            Compte compte = new Compte("Livret A", new Argent.Money(1000, "euros", MoneyConstantes.EUROS), 1.25);
+            Compte compte = CompteConstants.LIVRET_A;
             Console.WriteLine(compte.ToString());
-            Objet.Objet obj1 = new Objet.Objet(new Argent.Money(40, "euros", MoneyConstantes.EUROS), "lapin bleu");
-            Objet.Objet obj2 = new Objet.Objet(new Argent.Money(20, "euros", MoneyConstantes.EUROS), "lapin rouge");
+            Objet.Objet obj1 = new Objet.Objet(new Argent.Money(40, MoneyConstantes.EUROS), "lapin bleu");
+            Objet.Objet obj2 = new Objet.Objet(new Argent.Money(20, MoneyConstantes.EUROS), "lapin rouge");
             Achat achat = new Achat();
             achat.achats.Add(obj1);
             achat.achats.Add(obj2);

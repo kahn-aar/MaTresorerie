@@ -17,7 +17,7 @@ namespace MaTresorerie.Achats
 
         public Argent.Money prixTotal()
         {
-            Argent.Money prix = new Money(0, "euros", MoneyConstantes.EUROS);
+            Argent.Money prix = new Money(0, MoneyConstantes.EUROS);
             foreach (MaTresorerie.Objet.Objet objet in achats)
             {
                 prix = prix + objet.getPrix();

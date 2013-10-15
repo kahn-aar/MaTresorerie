@@ -8,14 +8,12 @@ namespace MaTresorerie.Argent
     public class Money
     {
         public long argent { get ; set;}
-        private String devise { get; set; }
-        private String deviseRaccourcis { get; set; }
+        private Devise devise { get; set; }
         
-        public Money(long prix, String devise, String raccourcis)
+        public Money(long prix, Devise devise)
         {
             this.argent = prix;
             this.devise = devise;
-            this.deviseRaccourcis = raccourcis;
         }
 
         public static Money operator+(Money money1, Money money)
@@ -23,7 +21,7 @@ namespace MaTresorerie.Argent
             if (money1.devise.Equals(money.devise))
             {
                 long prix = money1.argent + money.argent;
-                return new Money(prix, money1.devise, money1.deviseRaccourcis);
+                return new Money(prix, money1.devise);
             }
             else
             {
@@ -36,7 +34,7 @@ namespace MaTresorerie.Argent
             if (money1.devise.Equals(money.devise))
             {
                 long prix = money1.argent - money.argent;
-                return new Money(prix, money1.devise, money1.deviseRaccourcis);
+                return new Money(prix, money1.devise);
             }
             else
             {
@@ -46,7 +44,7 @@ namespace MaTresorerie.Argent
 
         public override String ToString()
         {
-            return argent.ToString() + " " + deviseRaccourcis;
+            return argent.ToString() + " " + devise.nomCourt;
         }
     }
 
