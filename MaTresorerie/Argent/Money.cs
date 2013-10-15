@@ -8,7 +8,7 @@ namespace MaTresorerie.Argent
     public class Money
     {
         public long argent { get ; set;}
-        private Devise devise { get; set; }
+        public Devise devise { get; set; }
         
         public Money(long prix, Devise devise)
         {

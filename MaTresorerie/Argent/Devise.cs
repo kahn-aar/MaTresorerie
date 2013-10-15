@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MaTresorerie.Argent
 {
-    class Devise
+    public class Devise
     {
         public String nom { get; set; }
         public String nomCourt { get; set; }
