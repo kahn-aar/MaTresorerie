@@ -7,8 +7,8 @@ namespace MaTresorerie.Argent
 {
     class Devise
     {
-        public String nom;
-        public String nomCourt;
+        public String nom { get; set; }
+        public String nomCourt { get; set; }
 
         public Devise(String nom, String nomCourt)
         {

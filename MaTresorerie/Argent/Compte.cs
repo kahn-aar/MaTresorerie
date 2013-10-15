@@ -7,15 +7,14 @@ namespace MaTresorerie.Argent
 {
     class Compte
     {
-        private String titre;
-        private Money solde;
-        private double taux;
+        public String titre { get; set; }
+        public Money solde { get; set; }
+        
 
-        public Compte(String titre, Money soldeInitial, double taux)
+        public Compte(String titre, Money soldeInitial)
         {
             this.titre = titre;
             this.solde = soldeInitial;
-            this.taux = taux;
         }
 
         public bool isDebiteur()
@@ -30,7 +29,7 @@ namespace MaTresorerie.Argent
 
         public override String ToString()
         {
-            return "Le compte " + titre + " à un solde de " + solde.ToString() + " avec un taux de " + taux.ToString();
+            return "Le compte " + titre + " à un solde de " + solde.ToString();
         }
     }
 }

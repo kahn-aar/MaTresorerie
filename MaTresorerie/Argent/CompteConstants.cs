@@ -7,6 +7,6 @@ namespace MaTresorerie.Argent
 {
     class CompteConstants
     {
-        public const Compte LIVRET_A = new Compte("Livret A", new Money(0, MoneyConstantes.EUROS), 1.25);
+        public const CompteEpargne LIVRET_A = new CompteEpargne("Livret A", new Money(0, MoneyConstantes.EUROS), 1.25);
     }
 }

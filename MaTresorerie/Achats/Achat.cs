@@ -8,7 +8,7 @@ namespace MaTresorerie.Achats
 {
     class Achat
     {
-        public List<MaTresorerie.Objet.Objet> achats;
+        public List<MaTresorerie.Objet.Objet> achats { get; private set; }
 
         public Achat()
         {

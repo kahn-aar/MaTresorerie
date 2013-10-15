@@ -7,10 +7,10 @@ namespace MaTresorerie.utilisateurs
 {
     class Utilisateur
     {
-        public String nom;
-        public String motDePasse;
+        public String nom { get; set; }
+        public String motDePasse { get; set; }
 
-        public List<Argent.Compte> listeDeComptes;
+        public List<Argent.Compte> listeDeComptes { get; private set; }
 
         public Utilisateur(String nom, String motDePasse)
         {
@@ -19,9 +19,9 @@ namespace MaTresorerie.utilisateurs
             listeDeComptes = new List<Argent.Compte>();
         }
 
-        public void ajouterUnCompte(String titre, double taux)
+        public void ajouterUnCompteEpargne(String titre, double taux)
         {
-            Argent.Compte newCompte = new Argent.Compte(titre, new Argent.Money(0,  Argent.MoneyConstantes.EUROS), taux);
+            Argent.Compte newCompte = new Argent.CompteEpargne(titre, new Argent.Money(0,  Argent.MoneyConstantes.EUROS), taux);
             listeDeComptes.Add(newCompte);
         }
     }
